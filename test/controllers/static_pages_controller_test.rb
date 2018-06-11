@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
-
   setup do
     @base_title = 'Ruby on Rails Tutorial Sample App'
   end
@@ -35,5 +34,4 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select 'title', "Home | #{@base_title}"
   end
-
 end
